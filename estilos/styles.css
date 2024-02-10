@@ -64,3 +64,14 @@ size: 25;
     transition: opacity 0.5s ease, transform 0.5s ease;
     transform: translateY(-7px);
 }
+
+@media all and (max-width: 740px){
+     body {
+        background-color: rgb(204, 42, 42);
+     }
+        .container{
+            background-color: #73966f;
+            color:#ebebeb;
+         }    
+    
+}
