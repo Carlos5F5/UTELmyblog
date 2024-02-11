@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* Añadir espacio en la parte superior para la barra de navegación fija */
+}
+
+header {
+    background-color: #ffffff; /* Fondo blanco para la barra de navegación */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para la barra de navegación */
+    position: fixed; /* Fijar la barra de navegación en la parte superior */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegurar que la barra esté por encima del contenido */
+    top: 0;
+}
+
+.menuform ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; /* Alinear los elementos del menú al principio */
+}
+
+.menuform li {
+    background-color: #22ffc4; /* Color de fondo para 'Principal' */
+    transition: background-color 0.5s ease; /* Transición suave del color de fondo */
+}
+
+.menuform a {
+    display: block; /* Hacer que el enlace llene el contenedor li */
+    padding: 15px 20px; /* Espaciado alrededor del texto */
+    text-decoration: none;
+    color: white; /* Color de texto para el enlace */
+    font-weight: bold; /* Fuente en negrita para el enlace */
+}
+
+.menuform li:hover {
+    background-color: #1bb8a5; /* Color de fondo al pasar el ratón por encima */
+}
+
+/* Estilos del contenedor principal */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos del formulario */
+.formulario-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Añadir margen arriba para separar de la barra de navegación */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos de las redes sociales */
+.social-networks {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-networks a {
+    margin: 0 10px;
+    color: #000; /* Color del texto para los enlaces */
+    font-size: 24px; /* Tamaño de los iconos */
+}
+
+.social-networks a:hover {
+    color: #555; /* Color al pasar el ratón por encima */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .menuform ul {
+        justify-content: center; /* Centrar los elementos del menú en dispositivos móviles */
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+/* ... tus estilos CSS existentes ... */
+
+.social-networks .whatsapp {
+    color: #25D366; /* Color oficial de WhatsApp */
+    font-size: 24px; /* Mantenemos el mismo tamaño de icono para WhatsApp */
+}
+
+.social-networks .whatsapp:hover {
+    color: #1da851; /* Un tono más oscuro de verde para el hover */
+}
+
+/* ... el resto de tus estilos CSS ... */
